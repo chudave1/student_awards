@@ -47,13 +47,13 @@
 <body>
   <div class="card">
     <h1>Award Student Reward Points</h1>
-    <p class="hint">Fill out the form to record a reward for a student. “Cancel” clears the form.</p>
+    <p class="hint">Fill out the form to record a reward for a student. â€œCancelâ€ clears the form.</p>
 
     <form id="award-form" novalidate>
       <div>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" inputmode="text" autocomplete="name" placeholder="e.g., Michael" required />
-        <small class="note">Exact match to the student’s name in <code class="k">Student</code>.</small>
+        <small class="note">Exact match to the studentâ€™s name in <code class="k">Student</code>.</small>
       </div>
 
       <div class="row two">
@@ -173,7 +173,7 @@
       }
 
       try {
-        setStatus('Processing…');
+        setStatus('Processingâ€¦');
         const student_id = await getOrCreateStudentIdByName(name);
         await insertReward({
           student_id,
@@ -199,5 +199,6 @@
   </script>
 </body>
 </html>
+
 
 
