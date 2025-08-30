@@ -56,6 +56,23 @@
         <small class="note">Exact match to the student’s name in <code class="k">Student</code>.</small>
       </div>
 
+<script>
+  // Parse query parameters from the URL
+  const params = new URLSearchParams(window.location.search);
+
+  // Check if 'name' exists in the URL
+  const studentName = params.get("name");
+
+  if (studentName) {
+    // Populate the input box with the name
+    const nameInput = document.getElementById("name");
+    nameInput.value = studentName;
+
+    // Optionally: mark the field as read-only so it can't be changed
+    // nameInput.readOnly = true;
+  }
+</script>
+
       <div class="row two">
         <div>
           <label for="reason">Reason for Award</label>
@@ -199,6 +216,7 @@
   </script>
 </body>
 </html>
+
 
 
 
