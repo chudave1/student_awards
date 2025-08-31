@@ -49,8 +49,8 @@
       min-height: 44px;         /* good touch target for iPhone */
     }
 
-    button.primary { background: #eef4ff; border-color: #cddafd; }
-    button.success { background: #e9fbe7; border-color: #c7efc2; }
+    button.award { background: #eef4ff; border-color: #cddafd; }
+    button.list { background: #e9fbe7; border-color: #c7efc2; }
 
     /* Tables (kept from your original) */
     table { border-collapse: collapse; width: 100%; margin-top: 0.5rem; }
@@ -72,15 +72,15 @@
     <p class="muted">Choose an action below.</p>
 
     <div class="row">
-      <button type="button" class="primary" onclick="location.href='AwardPointsV1.html?name=Michael'">
+      <button type="button" class="award" onclick="location.href='AwardPointsV1.html?name=Michael'">
         Award Points to Michael
       </button>
-      <button type="button" class="success" onclick="location.href='AwardPointsV1.html?name=David'">
+      <button type="button" class="award" onclick="location.href='AwardPointsV1.html?name=David'">
         Award Points to David
       </button>
     </div>
     <div class="row">
-      <button type="button" onclick="location.href='ListPointsV1.html'">List Awarded Points</button>
+      <button type="button" class="list" onclick="location.href='ListPointsV1.html'">List Awarded Points</button>
     </div>
   </div>
 </body>
